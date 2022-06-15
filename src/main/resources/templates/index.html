@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Productos Clemy</title>
+    <link rel="shortcut icon" href="img/Clemy.jpg">
+    <link rel="stylesheet" href="/./././estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4f5c87436a.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Nuestros Productos</a>
+            <a href="#contactenos">Contactanos</a>
+            <a href="#servicios">Nuestros Servicios</a>
+            <a href="#nosotros">Acerca de</a>
+            <a th:href="@{/login}" style="background: rgba(0, 0, 0, 0.534); padding: 10px 10px; border-radius: 5px; text-decoration: none;">Iniciar Sesion<i class="fa-solid fa-arrow-right-to-bracket fa-lg" ></i></a>
+
+        </nav>
+        <section class="textos-header" id="inicio">
+            <h2
+                style="font-weight: bold; font-size: 65px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                Clemy</h2>
+            <h1>!Los mejores productos echos con el corazon¡</h1>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg  
+                style="height: 100%; width: 100%;">
+                
+            </svg></div>
+    </header>
+    <main>
+        <section class="portafolio">
+            <div class="contenedor" id="productos">
+                <h2 class="titulo">Nuestros productos</h2>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src="img/candies-ge7b5d1359_1280.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/gummies-g2f9e484f2_1280.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/sweets-g81fcd8a2d_1280.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/muffins-g625b66374_1280.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/cupcakes-g92f7743ab_1280.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/chocolate-gd29736466_1280.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/praline-g16e79aa89_1280.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/cake-pops-g9d25f536a_1280.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clientes contenedor" id="contactenos">
+            <h2 class="titulo">Contactanos</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="contenido-texto-card">
+                        <img alt="" src="../../../img/maps.png" style="height: 300px; margin-top: 50px">
+                    </div>
+                </div>
+                <div class="card">
+
+                    <div class="contenido-texto-form">
+                        <form>
+                            <div class="form-group">
+                                <label for="nombre"><strong>Nombre</strong></label>
+                                <input required class="form-control" placeholder="Ingrese su nombre" id="nombre">
+                                <label for="apellido"><strong>Apellido</strong></label>
+                                <input required type="text" class="form-control" placeholder="Ingrese su apellido"
+                                    id="apellido">
+
+                                <label for="correo"><strong>Correo</strong></label>
+                                <input required type="email" class="form-control" placeholder="Ingrese su correo"
+                                    id="correo" >
+
+                                <label for="asunto"><strong>Asunto</strong></label>
+                                <input required type="text" class="form-control" placeholder="Ingrese su asunto"
+                                    id="asunto">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-danger btn-Ig mb-5">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-services" id="servicios">
+            <div class="contenedor">
+                <h2 class="titulo">Nuestros servicios</h2>
+                <div class="servicio-cont">
+                    <div class="servicio-ind">
+                        <img src="img/comer2.jpg" alt="">
+                        <h3>Productos Clemy</h3>
+                        <p>La funcion principal de nuestra compañia es ofrecer productos de calidad
+                            garantizando que a la vez favorezcan su economia. Es nuestro proposito, que su
+                            empresa nos da la oportunidad de estar en su lista de proveedores habituales.
+                            Esperamos que esta informacion sea de su completo interes y que podamos
+                            construir salidas relaciones comerciales.</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="img/servicio.jpg" alt="">
+                        <h3>Servicio Al Cliente</h3>
+                        <p>Para nuestra empresa es muy importante que nuestros clientes puedan comunicarse de manera
+                            inmedita con nostros por eso tenemos canales dedicados a la atencion al cliente, donde podra
+                            cominicarse con nosotros directamente, para de esta manera satisfacer la necesidad de
+                            nuestros clientes de una manera mucho mas rapida.</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="img/mensajero.jpeg" alt="">
+                        <h3>Nuestro Compromiso</h3>
+                        <p>Nustra puntualidad y compromiso con nuestros clientes es muy importante para nuestra empresa,
+                            por eso siempre llegamos hasta la puerta de su casa, en el menor tiepo posible, para que asi
+                            disfrute en la comodidad de su casa nuestros mejores productos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor sobre-nosotros" id="nosotros">
+            <h2 class="titulo">Acerca de nosotros</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="img/18771.jpg" alt="" class="imagen-about-us">
+                <div class="contenido-textos">
+                    <h3><span>1</span>Nuestra Mision</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam eius aspernatur ad
+                        consequuntur aperiam minima sed dicta odit numquam sapiente quam eum, architecto animi pariatur,
+                        velit doloribus laboriosam ut.</p>
+                    <h3><span>2</span>Nuestra Vision</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam eius aspernatur ad
+                        consequuntur aperiam minima sed dicta odit numquam sapiente quam eum, architecto animi pariatur,
+                        velit doloribus laboriosam ut.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <i><img src="img/Logo_1.png" alt="" style="width: 100px;"></i>
+                <p>Sistema de soluciones tecnologicas</p>
+            </div>
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>ProductosClemy@Gmail.com</p>
+            </div>
+            <div class="content-foo">
+                <h4>Contactenos</h4>
+                <p>Cra 120 #120-78</p>
+                <p>3217516851</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">DISEÑADO POR | Sistema de soluciones tecnologicas (SST)</h2>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
